@@ -1,0 +1,3 @@
+- 0-7.5 hrs: I stuck at blender for hrs but just contributed 1hr of real work..
+- 8-11: Tried to load a fbx model and animations seperately..
+- 
