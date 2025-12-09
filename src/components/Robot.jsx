@@ -7,10 +7,10 @@ import { useEffect } from 'react'
 import { GLTFLoader } from 'three/examples/jsm/Addons.js'
 
 export const Robot = (props) => {
-  const gltf = useLoader(GLTFLoader, `${process.env.PUBLIC_URL}/models/thug_robot.glb`)
+  const gltf = useLoader(GLTFLoader, `${process.env.PUBLIC_URL}/models/FinalCharacter.glb`)
   useEffect(() => {
-    gltf.scene.scale.set(0.4, 0.4, 0.4)
-    // gltf.scene.rotateY(-0.5 * Math.PI)
+    gltf.scene.scale.set(0.6, 0.6, 0.6)
+    gltf.scene.position.setY(0.59)
     gltf.scene.traverse((object) => {
       if (object.isMesh) {
         object.castShadow = true
